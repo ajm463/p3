@@ -1,0 +1,115 @@
+body {
+    font-family: 'Verdana';
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    font-family: 'Verdana';
+    font-weight: bold;
+    background-color: #b1afaf;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Verdana';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+
+.artworks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 5px;
+    align-items: start; 
+}
+
+.artwork-card {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 300px; 
+}
+
+.artwork-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+    height:85%;
+}
+
+.artwork-card h3 {
+    margin: 1px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Institute of Chicago Artworks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Art Institute of Chicago Artworks</h1>
+        <input type="text" id="searchInput" placeholder="Search artworks...">
+    </header>
+
+    <button class="button" id="openModalBtn" onclick="showModal()">Buy an artwork</button>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Artwork Purchase Form</h2>
+            <form id="purchaseForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Name" required>
+                <br>
+                <br>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="phone-number" name="phone" placeholder="Phone Number" required>
+                <br>
+                <label for="obra">Obra:</label>
+                <input type="text" id="obra" name="obra" placeholder="Name of the artpiece" required>
+                <br>
+                <label for="autor">Author:</label>
+                <input type="text" id="artist" name="artist" placeholder="Name of the artist">
+                <br>
+                <br>
+                <input type="number" name="price" placeholder="Price Offer" required>
+                <button type="submit">Send request</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div id="artworksContainer" class="artworks-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
